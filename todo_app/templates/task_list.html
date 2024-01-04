@@ -1,0 +1,49 @@
+<!-- task_list.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Task List{% endblock %}
+
+{% block content %}
+<header>
+    <!-- Your header content goes here -->
+    <!-- <h1>My Todo List</h1> -->
+    <nav>
+        <ul>
+            
+            <!-- Other navigation links -->
+        </ul>
+    </nav>
+</header>
+    <h2>Task List</h2>
+    <a href="{% url 'add_task' %}">Add Task</a>
+    <!-- Your task list content goes here -->
+    <div>
+        <a href="?filter=completed">Completed</a> |
+        <a href="?filter=incomplete">Incomplete</a> |
+        <a href="?filter=all">All</a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Completion Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+                <tr>
+                    <td>{{ task.title }}</td>
+                    <td>
+                        {% if task.completed %}
+                            Complete
+                        {% else %}
+                            Incomplete
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

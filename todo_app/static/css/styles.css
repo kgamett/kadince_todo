@@ -1,0 +1,59 @@
+/* your_app/static/your_app/css/styles.css */
+
+/* Style the task list */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* Style the filter links */
+div a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ddd;
+}
+
+a:visited {
+    color: #ddd; /* Set the same color as regular links */
+}
+
+div a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+header {
+    background-color: #227A10; /* Blue color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    text-align: center; /* Center align text */
+}
+
+header a[href*='login'] {
+    position: absolute;
+    top: 50px; /* Adjust top position */
+    right: 20px; /* Adjust right position */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+header a[href*='signup'] {
+    position: absolute;
+    top: 50px; /* Adjust top position */
+    right: 70px; /* Adjust right position */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Add more styles as needed */
