@@ -1,8 +1,13 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
 <head>
     <title>Edit Task</title>
 </head>
+{% endblock %}
+
+{% block content %}
 <body>
     <h1>Edit Task</h1>
     <form method="post">
@@ -12,3 +17,4 @@
     </form>
 </body>
 </html>
+{% endblock %}

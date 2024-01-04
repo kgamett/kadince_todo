@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
 </head>
+{% endblock %}
+
+{% block content %}
 <body>
     <h1>Login</h1>
     <form method="post">
@@ -17,4 +22,4 @@
         <button type="submit">Login</button>
     </form>
 </body>
-</html>
+{% endblock %}

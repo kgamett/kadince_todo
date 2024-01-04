@@ -1,24 +1,11 @@
-<!-- task_list.html -->
-
 {% extends 'base.html' %}
 {% load static %}
 
 {% block title %}Task List{% endblock %}
 
 {% block content %}
-<header>
-    <!-- Your header content goes here -->
-    <!-- <h1>My Todo List</h1> -->
-    <nav>
-        <ul>
-            
-            <!-- Other navigation links -->
-        </ul>
-    </nav>
-</header>
     <h2>Task List</h2>
-    <a href="{% url 'add_task' %}">Add Task</a>
-    <!-- Your task list content goes here -->
+    <a href="{% url 'add_task' %}"><button>Add Task</button></a>
     <div>
         <a href="?filter=completed">Completed</a> |
         <a href="?filter=incomplete">Incomplete</a> |
