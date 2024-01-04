@@ -1,14 +1,35 @@
+<!-- base.html -->
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-    <title>Kadince To-Do List</title>
+    <meta charset="UTF-8">
+    <title>{% block title %}To Do List{% endblock %}</title>
+    <!-- Add your CSS and other head elements here -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
-
 <body>
-</body>
+    <header>
+        <h1><a href="{% url 'task_list' %}">To Do List</a></h1>
+        <a href="{% url 'login' %}">
+            <button>Login</button>
+        </a>
+        <a href="{% url 'signup' %}">
+            <button>Register</button>
+        </a>
+    </header>
 
+    <main>
+        {% block content %}
+        <!-- This block will be overridden in child templates -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
+
+    <!-- Add your scripts or other body elements here -->
+</body>
 </html>
