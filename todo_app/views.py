@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponseRedirect
 from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth import logout
 from django.views.generic.edit import CreateView
 from django.views.generic import ListView
 from django.urls import reverse, reverse_lazy
@@ -13,6 +14,10 @@ from .forms import TaskForm, SignUpForm
 
 def index(request):
     return render(request, 'index.html')
+
+def logout_view(request):
+    logout(request)
+    return redirect('/')
 
 class TaskListView(LoginRequiredMixin, ListView):
     model = Task

@@ -12,12 +12,21 @@
 <body>
     <header>
         <h1><a href="{% url 'task_list' %}"><span style="color: #fff;">To Do List</span></a></h1>
-        <a href="{% url 'login' %}">
-            <button>Login</button>
-        </a>
+        {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}" method="post">
+                <button>Logout</button> 
+            </a>
+        {% else %}
+            <a href="{% url 'login' %}">
+                <button>Login</button>
+            </a>
+        {% endif %}
+        {% if user.is_authenticated %}
+        {% else %}
         <a href="{% url 'signup' %}">
             <button>Register</button>
         </a>
+        {% endif %}
     </header>
 
     <main>

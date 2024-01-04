@@ -51,10 +51,18 @@ header a[href*='login'] {
     text-decoration: none; /* Remove underline */
 }
 
+header a[href*='logout'] {
+    position: absolute;
+    top: 50px; /* Adjust top position */
+    right: 20px; /* Adjust right position */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
 header a[href*='signup'] {
     position: absolute;
     top: 50px; /* Adjust top position */
-    right: 70px; /* Adjust right position */
+    right: 80px; /* Adjust right position */
     color: #fff; /* Text color */
     text-decoration: none; /* Remove underline */
 }
