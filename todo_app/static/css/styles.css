@@ -1,4 +1,16 @@
-/* your_app/static/your_app/css/styles.css */
+body {
+    display: block;
+    margin: 0px;
+}
+
+main {
+    justify-content: center;
+    margin: 8px;
+}
+
+.table-container {
+    margin: 8px;
+}
 
 /* Style the task list */
 table {
@@ -6,6 +18,7 @@ table {
     table-layout: fixed;
     border-collapse: collapse;
     margin-bottom: 20px;
+    margin: 8px;
 }
 
 table th, table td {
@@ -26,7 +39,7 @@ div a {
 }
 
 a:visited {
-    color: #000; /* Set the same color as regular links */
+    color: #000;
     text-decoration: none;
 }
 
@@ -36,35 +49,35 @@ div a:hover {
 }
 
 header {
-    background-color: #227A10; /* Blue color */
-    color: #fff; /* Text color */
+    background-color: #227A10;
+    color: #fff;
     padding: 20px;
-    text-align: center; /* Center align text */
+    text-align: center;
     text-decoration: none;
 }
 
 header a[href*='login'] {
     position: absolute;
-    top: 50px; /* Adjust top position */
-    right: 20px; /* Adjust right position */
-    color: #fff; /* Text color */
-    text-decoration: none; /* Remove underline */
+    top: 50px;
+    right: 20px;
+    color: #fff; 
+    text-decoration: none;
 }
 
 header a[href*='logout'] {
     position: absolute;
-    top: 50px; /* Adjust top position */
-    right: 20px; /* Adjust right position */
-    color: #fff; /* Text color */
-    text-decoration: none; /* Remove underline */
+    top: 50px;
+    right: 20px;
+    color: #fff;
+    text-decoration: none;
 }
 
 header a[href*='signup'] {
     position: absolute;
-    top: 50px; /* Adjust top position */
-    right: 80px; /* Adjust right position */
-    color: #fff; /* Text color */
-    text-decoration: none; /* Remove underline */
+    top: 50px;
+    right: 80px;
+    color: #fff;
+    text-decoration: none;
 }
 
-/* Add more styles as needed */
+
