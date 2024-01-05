@@ -1,11 +1,23 @@
+html {
+    background-color: lightgrey;
+    color: white;
+}
+title {
+    color: white;
+}
+main {
+    background-color: lightgrey;
+}
+
 body {
     display: block;
     margin: 0px;
+    color: white;
 }
 
 .containing-element {
     justify-content: center;
-    margin: 16px;
+    margin-left: 16px;
 }
 
 .table-container {
