@@ -18,6 +18,8 @@ body {
 .containing-element {
     justify-content: center;
     margin-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .table-container {
