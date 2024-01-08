@@ -107,4 +107,10 @@ header a[href*='signup'] {
     cursor: pointer; /* Mouse pointer on hover */
   }
 
+.navbar-brand {
+    margin-left: 16px;
+}
 
+.welcome {
+    margin-left: 16px;
+}
